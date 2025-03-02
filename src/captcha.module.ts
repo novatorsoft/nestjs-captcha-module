@@ -15,6 +15,7 @@ export class CaptchaModule {
       {
         module: CaptchaModule,
         global: config?.isGlobal ?? false,
+        exports: ['CaptchaService', 'CaptchaConfig'],
         providers: [
           {
             provide: 'CaptchaConfig',
@@ -22,7 +23,6 @@ export class CaptchaModule {
           },
           CaptchaGuard,
         ],
-        exports: ['CaptchaService'],
       },
       CaptchaModule.getCaptchaProviderModuleConfig(config?.provider),
     );
@@ -34,7 +34,7 @@ export class CaptchaModule {
         module: CaptchaModule,
         global: config?.isGlobal ?? false,
         imports: config.imports,
-        exports: ['CaptchaService'],
+        exports: ['CaptchaService', 'CaptchaConfig'],
         providers: [
           {
             provide: 'CaptchaConfig',
