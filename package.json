@@ -1,6 +1,6 @@
 {
   "name": "nestjs-captcha-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NestJS Captcha Module",
   "author": "Novatorsoft",
   "private": false,

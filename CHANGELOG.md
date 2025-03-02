@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1](https://github.com/novatorsoft/nestjs-captcha-module/compare/v1.0.0...v1.0.1) (2025-03-02)
+
+### Bug Fixes
+
+* fix for captcha guard ([70d8cf7](https://github.com/novatorsoft/nestjs-captcha-module/commit/70d8cf7cc85c4477e3796d1d0e639f82a38cb612))
+
 ## 1.0.0 (2025-03-01)
 
 ### Features
