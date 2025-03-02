@@ -3,6 +3,7 @@ import * as lodash from 'lodash';
 import { CaptchaAsyncConfig, ConfigType } from './config';
 import { DynamicModule, Module } from '@nestjs/common';
 
+import { CaptchaGuard } from './guards';
 import { CaptchaProvider } from './dto';
 import { HttpModule } from '@nestjs/axios';
 import { ReCaptchaService } from './providers/re-captcha';
@@ -19,6 +20,7 @@ export class CaptchaModule {
             provide: 'CaptchaConfig',
             useValue: config,
           },
+          CaptchaGuard,
         ],
         exports: ['CaptchaService'],
       },
@@ -39,6 +41,7 @@ export class CaptchaModule {
             useFactory: config.useFactory,
             inject: config.inject,
           },
+          CaptchaGuard,
         ],
       },
       CaptchaModule.getCaptchaProviderModuleConfig(config?.provider),
