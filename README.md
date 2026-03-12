@@ -1,6 +1,6 @@
 <p align="center"><a href="https://novatorsoft.com" target="_blank"><img src="https://os.novatorsoft.com/novatorsoft/dark-logo.png" width="700" alt="Novatorsoft Logo"/></a></p>
 
-<h1 align="center">NestJS Captcha Module/h1>
+<h1 align="center">NestJS Captcha Module</h1>
 <p align="center">A NestJS captcha module that provides a simple, configurable abstraction for verifying CAPTCHA challenges inside your NestJS applications.</p>
 
 <p align="center">
